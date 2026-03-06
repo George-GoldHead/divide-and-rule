@@ -1,1 +1,1462 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Δ&amp;Β v3.0">
+  <meta name="theme-color" content="#FFD700">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTFhMmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkIiBjeD0iNDAlIiBjeT0iMzAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZFNTY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRkZENzAwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I4ODYwQiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ic2hpbmUiIGN4PSIzNSUiIGN5PSIyNSUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkZGRkYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIGNpcmNsZSAtLT4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2JnKSIgcng9IjE4MCIvPgogIAogIDwhLS0gU3RhcnMgLS0+CiAgPHRleHQgeD0iMTIwIiB5PSIyMDAiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNiI+4piFPC90ZXh0PgogIDx0ZXh0IHg9Ijg2MCIgeT0iMTgwIiBmb250LXNpemU9IjUwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjUiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4MCIgeT0iODIwIiBmb250LXNpemU9IjQwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjQiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4ODAiIHk9Ijg1MCIgZm9udC1zaXplPSI1NSIgZmlsbD0iI0ZGRDcwMCIgb3BhY2l0eT0iMC41Ij7imIU8L3RleHQ+CiAgPHRleHQgeD0iNTAwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNCI+4piFPC90ZXh0PgoKICA8IS0tIFRyb3BoeSBib2R5IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDI4MCBMIDMyMCA1ODAgUSAzMjAgNjgwIDUxMiA3MDAgUSA3MDQgNjgwIDcwNCA1ODAgTCA3MDQgMjgwIFoiIAogICAgICAgIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgCiAgPCEtLSBUcm9waHkgaGFuZGxlcyBsZWZ0IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDMyMCBRIDIwMCAzMjAgMjAwIDQ0MCBRIDIwMCA1NDAgMzIwIDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAKICA8IS0tIFRyb3BoeSBoYW5kbGVzIHJpZ2h0IC0tPgogIDxwYXRoIGQ9Ik0gNzA0IDMyMCBRIDgyNCAzMjAgODI0IDQ0MCBRIDgyNCA1NDAgNzA0IDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBTaGluZSBvbiB0cm9waHkgLS0+CiAgPHBhdGggZD0iTSAzMjAgMjgwIEwgMzIwIDU4MCBRIDMyMCA2ODAgNTEyIDcwMCBRIDcwNCA2ODAgNzA0IDU4MCBMIDcwNCAyODAgWiIgCiAgICAgICAgZmlsbD0idXJsKCNzaGluZSkiLz4KCiAgPCEtLSBUcm9waHkgc3RlbSAtLT4KICA8cmVjdCB4PSI0NjIiIHk9IjcwMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMjAiIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgCiAgPCEtLSBUcm9waHkgYmFzZSAtLT4KICA8cmVjdCB4PSIzNDAiIHk9IjgyMCIgd2lkdGg9IjM0NCIgaGVpZ2h0PSI2MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNCODg2MEIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxyZWN0IHg9IjM2MCIgeT0iODQwIiB3aWR0aD0iMzA0IiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNGRkU1NjYiIG9wYWNpdHk9IjAuNSIvPgoKICA8IS0tIFN0YXIgaW4gdHJvcGh5IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iNTYwIiBmb250LXNpemU9IjE4MCIgZmlsbD0iI0ZGRjhEQyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC45Ij7imIU8L3RleHQ+CiAgCiAgPCEtLSDOlM6ZzpHOmc6hzpXOmSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iOTYwIiBmb250LXNpemU9IjcyIiBmaWxsPSIjRkYwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiPs6UzpnOkc6ZzqHOlc6ZPC90ZXh0PgogIAogIDwhLS0gRGVjb3JhdGl2ZSBsaW5lcyAtLT4KICA8bGluZSB4MT0iMjAwIiB5MT0iMjUwIiB4Mj0iODI0IiB5Mj0iMjUwIiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==">
+  <link rel="manifest" id="pwa-manifest">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+  <title>ΔΙΑΙΡΕΙ & ΒΑΣΙΛΕΥΕ v3.0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+  <style>
+    :root {
+      --red: #FF1F1F;
+      --blue: #1565FF;
+      --gold: #FFD700;
+      --white: #F5F0E8;
+      --dark: #0A0A0F;
+      --mid: #141420;
+      --surface: #1C1C2E;
+      --muted: #4A4A6A;
+      --accent: #FF1F1F;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      background:var(--dark);
+      color:var(--white);
+      font-family:'Barlow Condensed',sans-serif;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    /* ── NOISE GRAIN OVERLAY ── */
+    body::before{
+      content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity:.35;
+    }
+
+    /* ── SPLASH ── */
+    #splash{
+      position:fixed;inset:0;z-index:500;
+      background:var(--dark);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      cursor:pointer;
+      transition:opacity .7s;
+      overflow:hidden;
+    }
+    #splash.out{opacity:0;pointer-events:none;}
+    .sp-bg{
+      position:absolute;inset:0;
+      background: radial-gradient(ellipse 120% 80% at 50% 110%, #1565FF22 0%, transparent 60%),
+                  radial-gradient(ellipse 80% 60% at 20% 20%, #FF1F1F18 0%, transparent 50%);
+    }
+    .sp-grid{
+      position:absolute;inset:0;
+      background-image:
+        linear-gradient(rgba(255,215,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,215,0,0.04) 1px, transparent 1px);
+      background-size:60px 60px;
+      animation:gridMove 20s linear infinite;
+    }
+    @keyframes gridMove{from{background-position:0 0}to{background-position:60px 60px}}
+    .sp-trophy{
+      position:relative;z-index:1;
+      font-size:5rem;margin-bottom:20px;
+      animation:trophyBounce 2s ease-in-out infinite;
+      filter:drop-shadow(0 0 30px rgba(255,215,0,0.6));
+    }
+    @keyframes trophyBounce{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-14px) scale(1.08)}}
+    .sp-title{
+      position:relative;z-index:1;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:clamp(3.5rem,12vw,7rem);
+      letter-spacing:8px;
+      line-height:.9;
+      text-align:center;
+      background: linear-gradient(90deg,
+        #FF1F1F 0%,
+        #FF8C00 14%,
+        #FFD700 28%,
+        #00FF88 42%,
+        #00CFFF 57%,
+        #AA44FF 71%,
+        #FF6B9D 85%,
+        #FF1F1F 100%
+      );
+      background-size:220% auto;
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      animation:auroraMove 4s linear infinite;
+      filter:drop-shadow(0 0 24px rgba(255,215,0,0.25));
+    }
+    @keyframes auroraMove{from{background-position:0% center}to{background-position:220% center}}
+    .sp-sub{
+      position:relative;z-index:1;
+      font-family:'Space Mono',monospace;
+      font-size:.7rem;letter-spacing:5px;
+      color:var(--gold);opacity:.8;
+      margin-top:10px;text-align:center;
+    }
+    .sp-tap{
+      position:relative;z-index:1;
+      margin-top:40px;
+      font-size:.75rem;letter-spacing:3px;color:#ffffff44;
+      animation:tapBlink 2s infinite;
+    }
+    @keyframes tapBlink{0%,100%{opacity:.3}50%{opacity:.9}}
+    .sp-stars{position:absolute;inset:0;pointer-events:none;}
+    .sp-star{position:absolute;background:#FFD700;border-radius:50%;animation:twink var(--d,2s) var(--delay,0s) infinite;}
+    @keyframes twink{0%,100%{opacity:.05;transform:scale(.3)}50%{opacity:.8;transform:scale(1)}}
+
+    /* ── TOP BAR ── */
+    .topbar{
+      position:fixed;top:0;left:0;right:0;z-index:50;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:12px 20px;
+      background:rgba(10,10,15,.85);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(255,215,0,.08);
+    }
+    .topbar-logo{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.4rem;letter-spacing:4px;
+      background:linear-gradient(90deg,#FF1F1F,#FFD700,#1565FF);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    .topbar-btn{
+      background:none;border:1px solid var(--muted);border-radius:6px;
+      color:var(--white);padding:6px 14px;cursor:pointer;
+      font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:1px;
+      transition:all .2s;
+    }
+    .topbar-btn:hover{border-color:var(--gold);color:var(--gold);}
+
+    /* ── OVERLAY / MODAL ── */
+    .overlay{
+      display:none;position:fixed;inset:0;
+      background:rgba(0,0,0,.92);
+      align-items:center;justify-content:center;
+      z-index:100;
+      backdrop-filter:blur(4px);
+    }
+    .overlay.show{display:flex;}
+    .modal{
+      background:var(--surface);
+      border:1px solid rgba(255,215,0,.12);
+      border-radius:4px;
+      padding:28px 24px 40px;
+      width:94%;max-width:460px;
+      display:flex;flex-direction:column;align-items:center;
+      max-height:85vh;overflow-y:auto;
+      position:relative;
+      box-shadow:0 20px 60px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .modal::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:2px;
+      background:linear-gradient(90deg,var(--red),var(--gold),var(--blue));
+    }
+    .modal h2{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.8rem;letter-spacing:4px;
+      color:var(--white);margin-bottom:10px;
+      text-align:center;
+    }
+    .modal p{color:#9999BB;font-size:1rem;line-height:1.7;text-align:center;}
+    .divider{width:100%;height:1px;background:rgba(255,255,255,.06);margin:16px 0;}
+    .field-label{
+      color:#9999BB;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;
+      margin-top:10px;align-self:flex-start;
+    }
+    .field-label::before{content:'▸ ';color:var(--gold);}
+    .name-input,.max-input{
+      width:100%;padding:12px 14px;margin:6px 0;
+      background:#1a1a2a;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:3px;
+      color:var(--white);font-size:1rem;
+      font-family:'Barlow Condensed',sans-serif;
+      text-align:center;outline:none;
+      transition:border-color .2s,box-shadow .2s;
+      -webkit-appearance:none;
+      appearance:none;
+    }
+    .name-input:focus,.max-input:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(255,215,0,.1);}
+    select.name-input option{
+      background:#1a1a2a;
+      color:var(--white);
+      font-family:'Barlow Condensed',sans-serif;
+      font-size:1rem;
+      padding:8px;
+    }
+
+    /* ── MODE BUTTONS ── */
+    .mode-btns{display:flex;gap:10px;margin:14px 0;width:100%;}
+    .mode-btn{
+      flex:1;padding:18px 10px;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:3px;
+      background:rgba(255,255,255,.02);
+      color:#9999BB;cursor:pointer;
+      font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:1px;
+      transition:all .2s;text-align:center;
+    }
+    .mode-btn:hover{border-color:var(--gold);color:var(--white);}
+    .mode-btn.active{
+      border-color:var(--gold);
+      background:rgba(255,215,0,.08);
+      color:var(--gold);
+    }
+    .mode-btn .mode-icon{font-size:1.8rem;display:block;margin-bottom:6px;}
+
+    /* ── BUTTONS ── */
+    .btn{
+      padding:13px 30px;border-radius:3px;border:none;
+      font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:3px;
+      cursor:pointer;color:#fff;margin:5px;
+      transition:all .15s;
+      position:relative;overflow:hidden;
+    }
+    .btn::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,0);transition:.15s;}
+    .btn:hover::after{background:rgba(255,255,255,.08);}
+    .btn:active{transform:scale(.97);}
+    .btn-primary{
+      background:var(--red);
+      box-shadow:0 4px 20px rgba(255,31,31,.3);
+    }
+    .btn-blue{
+      background:var(--blue);
+      box-shadow:0 4px 20px rgba(21,101,255,.3);
+    }
+    .btn-gold{
+      background:var(--gold);color:#0A0A0F;
+      box-shadow:0 4px 20px rgba(255,215,0,.3);
+    }
+    .btn-ghost{
+      background:transparent;
+      border:1px solid rgba(255,255,255,.15);
+      color:#9999BB;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;
+    }
+    .btn-ghost:hover::after{background:rgba(255,255,255,.04);}
+    .btn-green{background:#00AA44;box-shadow:0 4px 20px rgba(0,170,68,.3);}
+
+    /* ── ROOM CODE ── */
+    .room-code{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:4rem;letter-spacing:14px;
+      color:var(--gold);text-align:center;
+      text-shadow:0 0 40px rgba(255,215,0,.4);
+      margin:10px 0;
+    }
+    .players-lobby{width:100%;display:flex;flex-direction:column;gap:8px;margin:10px 0;}
+    .lobby-player{
+      padding:10px 16px;border-radius:3px;
+      display:flex;align-items:center;gap:10px;
+      font-weight:700;font-size:1rem;letter-spacing:1px;
+    }
+
+    /* ── GAME AREA ── */
+    #gameArea{
+      position:relative;z-index:1;
+      padding-top:58px;
+      display:none;flex-direction:column;align-items:center;
+      width:100%;max-width:420px;
+      margin:0 auto;
+      min-height:100vh;
+      padding-bottom:12px;
+      padding-left:12px;
+      padding-right:12px;
+    }
+
+    .stats-bar{
+      width:100%;display:flex;gap:0;
+      background:var(--surface);
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:3px;
+      overflow:hidden;
+      margin-bottom:14px;
+    }
+    .stat-cell{
+      flex:1;padding:6px 4px;text-align:center;
+      font-family:'Space Mono',monospace;font-size:.85rem;
+      font-weight:700;
+      color:var(--gold);
+      border-right:1px solid rgba(255,255,255,.07);
+    }
+    .stat-cell:last-child{border-right:none;}
+    .stat-label{font-size:.55rem;color:#666;display:block;letter-spacing:1px;margin-bottom:2px;text-transform:uppercase;}
+
+    .round-tag{
+      font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:3px;
+      color:var(--muted);margin-bottom:8px;
+    }
+
+    .players-row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-bottom:10px;}
+    .player-chip{
+      padding:4px 12px;border-radius:2px;
+      font-size:.8rem;font-weight:700;letter-spacing:1px;
+      background:rgba(0,0,0,.4);color:#444;
+      border:1px solid #222;
+      transition:all .25s;
+    }
+
+    /* ── CURRENT PLAYER BLOCK ── */
+    .current-player-block{
+      width:100%;
+      padding:5px 12px;
+      margin-bottom:6px;
+      border-left:4px solid var(--red);
+      background:linear-gradient(90deg,rgba(255,31,31,.08),transparent);
+      transition:all .3s;
+    }
+    .cp-label{font-size:.55rem;letter-spacing:2px;color:#666;text-transform:uppercase;}
+    .cp-name{
+      font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:3px;
+      color:var(--white);line-height:1.2;
+      transition:color .3s;
+    }
+
+    /* ── MESSAGE + DIRECTION ── */
+    .message-wrap{
+      width:100%;text-align:center;margin-bottom:4px;
+    }
+    .message{
+      font-size:.85rem;letter-spacing:2px;font-weight:600;
+      color:#9999BB;text-transform:uppercase;
+      min-height:18px;
+    }
+    .direction{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:1.6rem;letter-spacing:3px;
+      color:var(--gold);
+      min-height:32px;
+      animation:dirPulse 1s infinite;
+      transition:color .3s;
+    }
+    @keyframes dirPulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .direction.hidden{visibility:hidden;}
+
+    /* ── RANGE BAR ── */
+    .range-block{
+      width:100%;margin-bottom:8px;
+    }
+    .range-nums{
+      display:flex;justify-content:space-between;
+      font-family:'Space Mono',monospace;font-size:1rem;
+      color:var(--gold);font-weight:700;margin-bottom:4px;
+    }
+    .range-track{
+      width:100%;height:6px;
+      background:#1a1a2e;border-radius:0;
+      overflow:hidden;position:relative;
+    }
+    .range-fill{
+      position:absolute;height:100%;
+      background:linear-gradient(90deg,var(--blue),var(--red));
+      transition:all .4s cubic-bezier(.4,0,.2,1);
+    }
+    .range-hint{font-size:.55rem;color:#444;letter-spacing:2px;margin-top:3px;}
+
+    /* ── INPUT ── */
+    input[type=number]{
+      width:160px;height:64px;
+      background:rgba(0,0,0,.5);
+      border:2px solid var(--muted);border-radius:3px;
+      color:var(--white);font-size:2.2rem;
+      font-family:'Space Mono',monospace;
+      text-align:center;margin:8px 0;outline:none;
+      transition:border-color .3s,box-shadow .3s,color .3s;
+    }
+    input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;}
+    input[type=number]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,215,0,.12);}
+
+    /* ── NUMPAD ── */
+    .numpad-wrap{
+      display:none;flex-direction:column;align-items:center;
+      gap:5px;margin:4px 0;width:100%;max-width:260px;
+    }
+    .numpad-display{
+      font-family:'Space Mono',monospace;
+      font-size:1.6rem;font-weight:700;
+      color:var(--white);
+      background:rgba(0,0,0,.5);
+      border:2px solid var(--muted);
+      border-radius:3px;
+      width:130px;height:48px;
+      display:flex;align-items:center;justify-content:center;
+      transition:border-color .3s,color .3s,box-shadow .3s;
+    }
+    .numpad-display.empty{color:#333;font-size:.85rem;font-family:'Barlow Condensed',sans-serif;letter-spacing:2px;}
+    .numpad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;max-width:260px;}
+    .npk{
+      height:42px;border-radius:2px;border:none;
+      font-size:1.2rem;font-weight:700;
+      font-family:'Space Mono',monospace;
+      color:var(--white);
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      cursor:pointer;
+      transition:all .12s;
+    }
+    .npk:active{transform:scale(.91);background:rgba(255,255,255,.15);}
+    .npk-del{background:rgba(204,0,0,.2);border-color:rgba(204,0,0,.3);font-size:.9rem;}
+    .npk-del:active{background:rgba(204,0,0,.5);}
+    .npk-0{grid-column:2;}
+
+    /* ── COUNTDOWN BAR ── */
+    .countdown-wrap{width:100%;margin-bottom:10px;display:none;flex-direction:column;gap:4px;}
+    .countdown-track{width:100%;height:6px;background:#111;border-radius:0;}
+    .countdown-fill{height:100%;border-radius:0;transition:width 1s linear;}
+    .countdown-text{font-size:.7rem;color:#666;letter-spacing:2px;font-family:'Space Mono',monospace;}
+
+    /* ── COUNTDOWN 3-2-1 OVERLAY ── */
+    #countdownOverlay{
+      display:none;position:fixed;inset:0;z-index:450;
+      background:rgba(0,0,0,.95);
+      align-items:center;justify-content:center;flex-direction:column;
+    }
+    #countdownOverlay.show{display:flex;}
+    .big-num{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:clamp(8rem,25vw,14rem);
+      color:var(--gold);
+      animation:bigPop .7s cubic-bezier(.175,.885,.32,1.275);
+      text-shadow:0 0 80px rgba(255,215,0,.5);
+      line-height:1;
+    }
+    @keyframes bigPop{0%{transform:scale(2);opacity:0}100%{transform:scale(1);opacity:1}}
+    .big-sub{font-size:1rem;letter-spacing:6px;color:#555;margin-top:12px;}
+
+    /* ── SCORETABLE ── */
+    .score-table{width:100%;border-collapse:collapse;margin-bottom:10px;}
+    .score-table tr{border-bottom:1px solid rgba(255,255,255,.05);}
+    .score-table td{padding:12px 8px;color:var(--white);font-size:1.15rem;}
+    .score-table tr:hover td{background:rgba(255,255,255,.02);}
+
+    /* ── HOF TABLE ── */
+    .hof-table{width:100%;border-collapse:collapse;margin-bottom:10px;}
+    .hof-table tr{border-bottom:1px solid rgba(255,255,255,.05);}
+    .hof-table td{padding:10px 6px;}
+    .hof-table tr:hover td{background:rgba(255,255,255,.02);}
+
+    /* ── WIN BANNER ── */
+    #fwCanvas{display:none;position:fixed;inset:0;z-index:400;pointer-events:none;}
+    .win-banner{
+      display:none;position:fixed;inset:0;z-index:401;
+      align-items:center;justify-content:center;flex-direction:column;
+      pointer-events:none;
+    }
+    .win-banner.show{display:flex;}
+    .win-text{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:clamp(2rem,8vw,3.5rem);
+      letter-spacing:6px;
+      animation:winPulse .4s infinite alternate;text-align:center;padding:0 20px;
+    }
+    @keyframes winPulse{from{transform:scale(1)}to{transform:scale(1.04)}}
+    .win-sub{font-size:1rem;letter-spacing:3px;color:rgba(255,255,255,.7);margin-top:10px;text-align:center;}
+
+    /* ── WAITING DOTS ── */
+    .dots{font-size:2rem;animation:dotsAnim 1.5s infinite;}
+    @keyframes dotsAnim{0%{opacity:.15}50%{opacity:1}100%{opacity:.15}}
+
+    /* ── HOTBAR THEME ── */
+    body.theme-red { background: #120505; }
+    body.theme-blue { background: #05080F; }
+    body.theme-close { background: #0A0A0F; }
+
+    /* ── ANSWER FLASH ── */
+    @keyframes flashRight{0%{background:rgba(0,200,100,.12)}100%{background:transparent}}
+    @keyframes flashWrong{0%{background:rgba(255,31,31,.15)}100%{background:transparent}}
+    .flash-right{animation:flashRight .5s;}
+    .flash-wrong{animation:flashWrong .5s;}
+
+    /* ── RESPONSIVE ── */
+    @media(max-height:520px){
+      .direction{font-size:1.8rem;min-height:36px;}
+      .cp-name{font-size:1.3rem;}
+      .btn{padding:9px 24px;font-size:1rem;}
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar{width:4px;}
+    ::-webkit-scrollbar-track{background:#0A0A0F;}
+    ::-webkit-scrollbar-thumb{background:#333;}
+
+    /* ── MISC ── */
+    .badge{
+      display:inline-block;padding:2px 8px;border-radius:2px;
+      font-size:.65rem;letter-spacing:2px;font-weight:700;
+      background:rgba(255,215,0,.1);color:var(--gold);border:1px solid rgba(255,215,0,.2);
+      text-transform:uppercase;
+    }
+    .tag-new{background:rgba(255,31,31,.15);color:var(--red);border-color:rgba(255,31,31,.3);}
+  </style>
+</head>
+<body>
+
+<canvas id="fwCanvas"></canvas>
+<div class="win-banner" id="winBanner">
+  <div class="win-text" id="winText">ΝΙΚΗ!</div>
+  <div class="win-sub" id="winSub"></div>
+</div>
+
+<!-- 3-2-1 -->
+<div id="countdownOverlay">
+  <div class="big-num" id="bigNum">3</div>
+  <div class="big-sub" id="bigSub">ΕΤΟΙΜΑΣΤΕΙΤΕ</div>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar" id="topbar" style="display:none">
+  <div class="topbar-logo">Δ&amp;Β</div>
+  <button class="topbar-btn" onclick="showHof()">🏆 HOF</button>
+</div>
+
+<!-- SPLASH -->
+<div id="splash" onclick="closeSplash()">
+  <div class="sp-bg"></div>
+  <div class="sp-grid"></div>
+  <div class="sp-stars" id="spStars"></div>
+  <div class="sp-trophy">🏆</div>
+  <div class="sp-title">ΔΙΑΙΡΕΙ<br>&amp; ΒΑΣΙΛΕΥΕ</div>
+  <div class="sp-sub">▸ ΜΑΝΤΕΨΕ ΤΟΝ ΑΡΙΘΜΟ ◂</div>
+  <div class="sp-tap">[ ΠΑΤΑΜΕ ΓΙΑ ΕΝΑΡΞΗ ]</div>
+</div>
+
+<!-- GAME AREA -->
+<div id="gameArea">
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-cell"><span class="stat-label">ΧΡΟΝΟΣ</span><span id="statTime">00:00</span></div>
+    <div class="stat-cell"><span class="stat-label">ΚΙΝΗΣΕΙΣ</span><span id="statAttempts">0</span></div>
+    <div class="stat-cell"><span class="stat-label">ΓΥΡΟΣ</span><span id="statRound">1/1</span></div>
+  </div>
+
+  <div class="countdown-wrap" id="countdownWrap">
+    <div class="countdown-track"><div class="countdown-fill" id="cdFill"></div></div>
+    <div class="countdown-text" id="cdText">30s</div>
+  </div>
+
+  <div class="players-row" id="playersRow"></div>
+
+  <div class="current-player-block" id="cpBlock">
+    <div class="cp-label">ΣΕΙΡΑ</div>
+    <div class="cp-name" id="cpName">—</div>
+  </div>
+
+  <div class="message-wrap" id="msgWrap">
+    <div class="message" id="message">ΜΑΝΤΕΨΕ!</div>
+    <div class="direction hidden" id="direction">▲ ΜΕΓΑΛΥΤΕΡΟ</div>
+  </div>
+
+  <div class="range-block">
+    <div class="range-nums"><span id="rangeMin">1</span><span id="rangeMax">100</span></div>
+    <div class="range-track"><div class="range-fill" id="rangeFill"></div></div>
+    <div class="range-hint">▸ ΠΕΔΙΟ ΑΝΑΖΗΤΗΣΗΣ ◂</div>
+  </div>
+
+  <div class="numpad-wrap" id="numpadWrap">
+    <div class="numpad-display empty" id="npDisplay">αριθμός</div>
+    <div class="numpad-grid">
+      <button class="npk" onclick="npPress('1')">1</button><button class="npk" onclick="npPress('2')">2</button><button class="npk" onclick="npPress('3')">3</button>
+      <button class="npk" onclick="npPress('4')">4</button><button class="npk" onclick="npPress('5')">5</button><button class="npk" onclick="npPress('6')">6</button>
+      <button class="npk" onclick="npPress('7')">7</button><button class="npk" onclick="npPress('8')">8</button><button class="npk" onclick="npPress('9')">9</button>
+      <button class="npk npk-del" onclick="npDel()">⌫</button><button class="npk npk-0" onclick="npPress('0')">0</button><button class="npk npk-del" onclick="npClear()">C</button>
+    </div>
+  </div>
+
+  <input type="number" id="guessInput" onkeydown="if(event.key==='Enter'){event.preventDefault();handleGuess();}" placeholder="—">
+
+  <button class="btn btn-primary" id="checkBtn" onclick="handleGuess()" style="width:100%;padding:11px 0;font-size:1.2rem;margin-top:6px">
+    ΕΛΕΓΧΟΣ
+  </button>
+
+  <div style="position:fixed;bottom:0;left:0;right:0;z-index:20;background:rgba(10,10,15,.95);padding:6px 12px;border-top:1px solid rgba(255,255,255,.05)" id="newGameBtn">
+    <button class="btn btn-ghost" style="padding:6px 18px;font-size:.85rem;width:100%" onclick="leaveGame()">⬅ ΕΞΟΔΟΣ</button>
+  </div>
+</div>
+
+<!-- ══════════ MODALS ══════════ -->
+
+<!-- MODE -->
+<div class="overlay show" id="modeModal">
+  <div class="modal">
+    <div style="width:100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <span style="font-size:1.8rem;line-height:1" title="v3.0">🏆</span>
+      <h2 style="font-size:2rem;letter-spacing:6px">ΝΕΟ ΠΑΙΧΝΙΔΙ</h2>
+      <button style="background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.25);border-radius:50%;width:32px;height:32px;font-size:1.1rem;cursor:pointer;color:var(--gold);display:flex;align-items:center;justify-content:center" onclick="showInfoModal()">ⓘ</button>
+    </div>
+    <div class="mode-btns">
+      <div class="mode-btn active" id="modeLocal" onclick="selectMode('local')">
+        <span class="mode-icon">📱</span>
+        ΤΟΠΙΚΟ<br><small style="font-weight:400;color:#666;font-size:.75rem">1 κινητό</small>
+      </div>
+      <div class="mode-btn" id="modeOnline" onclick="selectMode('online')">
+        <span class="mode-icon">🌍</span>
+        ONLINE<br><small style="font-weight:400;color:#666;font-size:.75rem">δίκτυο</small>
+      </div>
+    </div>
+
+    <div id="localSettings" style="width:100%">
+      <span class="field-label">Παίκτες</span>
+      <select id="numPlayers" class="name-input" onchange="renderPlayerInputs()" style="cursor:pointer">
+        <option value="1">1 παίκτης</option><option value="2" selected>2 παίκτες</option>
+        <option value="3">3 παίκτες</option><option value="4">4 παίκτες</option>
+        <option value="5">5 παίκτες</option><option value="6">6 παίκτες</option>
+      </select>
+      <div id="playerInputs" style="width:100%;display:flex;flex-wrap:wrap;gap:8px;margin:8px 0;justify-content:center"></div>
+      <div style="display:flex;gap:6px;width:100%;margin-top:4px">
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center">
+          <span style="color:#FFD700;font-size:.6rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;white-space:nowrap">▸ MAX</span>
+          <input class="max-input" id="maxInput" type="number" value="100" style="padding:8px 2px;font-size:1rem;width:100%;text-align:center">
+        </div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center">
+          <span style="color:#FFD700;font-size:.6rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;white-space:nowrap">▸ ΓΥΡΟΙ</span>
+          <input class="max-input" id="roundsInput" type="number" value="3" min="1" max="10" style="padding:8px 2px;font-size:1rem;width:100%;text-align:center">
+        </div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center">
+          <span style="color:#FFD700;font-size:.6rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;white-space:nowrap">▸ CD (sec)</span>
+          <input class="max-input" id="countdownInput" type="number" value="0" min="0" max="300" style="padding:8px 2px;font-size:1rem;width:100%;text-align:center">
+        </div>
+      </div>
+      <button class="btn btn-primary" style="margin-top:16px;width:100%;font-size:1.3rem" onclick="startLocalGame()">ΠΑΙΖΟΥΜΕ ▶</button>
+    </div>
+
+    <div id="onlineSettings" style="width:100%;display:none">
+      <div style="display:flex;gap:8px;margin:14px 0;width:100%">
+        <button class="btn btn-green" style="flex:1;font-size:.85rem;white-space:nowrap;padding:10px 6px" onclick="createRoom()">+ ΔΗΜΙΟΥΡΓΙΑ</button>
+        <button class="btn btn-blue" style="flex:1;font-size:.85rem;white-space:nowrap;padding:10px 6px" onclick="showJoinRoom()">ΕΙΣΟΔΟΣ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CREATE ROOM -->
+<div class="overlay" id="createRoomModal">
+  <div class="modal">
+    <h2 style="color:#00AA44">ΔΩΜΑΤΙΟ</h2>
+    <span class="field-label">Το όνομά σου</span>
+    <input class="name-input" id="hostName" type="text" placeholder="Οικοδεσπότης...">
+    <span class="field-label">Μέγιστος αριθμός</span>
+    <input class="max-input" id="onlineMaxInput" type="number" value="100">
+    <span class="field-label">Γύροι</span>
+    <input class="max-input" id="onlineRoundsInput" type="number" value="3" min="1" max="10">
+    <button class="btn btn-green" style="margin-top:14px;width:100%" onclick="createRoomConfirm()">ΔΗΜΙΟΥΡΓΙΑ ▶</button>
+    <button class="btn btn-ghost" style="margin-top:6px" onclick="backToMode()">← ΠΙΣΩ</button>
+  </div>
+</div>
+
+<!-- WAITING ROOM HOST -->
+<div class="overlay" id="waitingRoomModal">
+  <div class="modal">
+    <h2>ΑΙΘΟΥΣΑ ΑΝΑΜΟΝΗΣ</h2>
+    <p style="color:#555;font-size:.8rem;margin-bottom:8px;letter-spacing:2px">ΣΤΕΙΛΕ ΤΟΝ ΚΩΔΙΚΟ</p>
+    <div class="room-code" id="roomCodeDisplay">----</div>
+    <div class="divider"></div>
+    <div class="players-lobby" id="lobbyPlayers"></div>
+    <div class="divider"></div>
+    <button class="btn btn-gold" id="startOnlineBtn" onclick="startOnlineGame()" style="width:100%;color:#0A0A0F" disabled>ΕΝΑΡΞΗ</button>
+    <button class="btn btn-ghost" style="margin-top:6px" onclick="leaveRoom()">← ΕΞΟΔΟΣ</button>
+  </div>
+</div>
+
+<!-- JOIN ROOM -->
+<div class="overlay" id="joinRoomModal">
+  <div class="modal">
+    <h2>ΕΙΣΟΔΟΣ</h2>
+    <span class="field-label">Το όνομά σου</span>
+    <input class="name-input" id="joinName" type="text" placeholder="Όνομα...">
+    <span class="field-label">Κωδικός δωματίου</span>
+    <input class="name-input" id="joinCode" type="text" placeholder="0000" maxlength="4" style="font-family:'Space Mono',monospace;font-size:2rem;letter-spacing:10px">
+    <button class="btn btn-blue" style="margin-top:14px;width:100%" onclick="joinRoomConfirm()">ΕΙΣΟΔΟΣ ▶</button>
+    <button class="btn btn-ghost" style="margin-top:6px" onclick="backToMode()">← ΠΙΣΩ</button>
+  </div>
+</div>
+
+<!-- GUEST WAIT -->
+<div class="overlay" id="guestWaitModal">
+  <div class="modal">
+    <h2 style="color:#4ECDC4">ΑΝΑΜΟΝΗ</h2>
+    <div class="room-code" id="guestRoomCode">----</div>
+    <p style="color:#555;margin:10px 0;letter-spacing:2px;font-size:.85rem">ΠΕΡΙΜΕΝΕ ΤΟΝ ΟΙΚΟΔΕΣΠΟΤΗ</p>
+    <div class="players-lobby" id="guestLobbyPlayers"></div>
+    <div class="dots">• • •</div>
+    <button class="btn btn-ghost" style="margin-top:16px" onclick="leaveRoom()">← ΕΞΟΔΟΣ</button>
+  </div>
+</div>
+
+<!-- ROUND RESULTS -->
+<div class="overlay" id="roundResultsModal">
+  <div class="modal">
+    <h2 id="rrTitle">ΑΠΟΤΕΛΕΣΜΑΤΑ</h2>
+    <div style="color:#555;font-size:.95rem;margin-bottom:12px;letter-spacing:2px" id="rrSub"></div>
+    <table class="score-table" id="rrTable"></table>
+    <div class="divider"></div>
+    <div style="color:var(--gold);font-size:1rem;letter-spacing:1px;margin-bottom:10px" id="rrTotals"></div>
+    <button class="btn btn-blue" id="nextRoundBtn" onclick="nextRound()" style="width:100%">ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ ▶</button>
+    <button class="btn btn-gold" id="finalBtn" onclick="showFinalResults()" style="width:100%;color:#0A0A0F;display:none">🏆 ΤΕΛΙΚΑ</button>
+  </div>
+</div>
+
+<!-- FINAL RESULTS -->
+<div class="overlay" id="finalResultsModal">
+  <div class="modal">
+    <h2>ΤΕΛΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ</h2>
+    <div style="color:#555;font-size:.95rem;letter-spacing:2px;margin-bottom:12px" id="frSub"></div>
+    <table class="score-table" id="frTable"></table>
+    <div class="divider"></div>
+    <button class="btn btn-primary" onclick="newGame()" style="width:100%">ΝΕΟ ΠΑΙΧΝΙΔΙ ↺</button>
+  </div>
+</div>
+
+<!-- HALL OF FAME -->
+<div class="overlay" id="hofModal">
+  <div class="modal">
+    <h2>HALL OF FAME</h2>
+    <p style="color:#444;font-size:.75rem;letter-spacing:2px;margin-bottom:14px">TOP 10 · ΛΙΓΟΤΕΡΕΣ ΚΙΝΗΣΕΙΣ WINS</p>
+    <table class="hof-table" id="hofTable"></table>
+    <div class="divider"></div>
+    <button class="btn btn-primary" style="margin-bottom:6px" onclick="clearHof()">🗑 ΔΙΑΓΡΑΦΗ</button>
+    <button class="btn btn-ghost" onclick="closeHof()">ΚΛΕΙΣΙΜΟ</button>
+  </div>
+</div>
+
+<!-- INFO -->
+<div class="overlay" id="infoModal">
+  <div class="modal" style="justify-content:space-between;padding-bottom:16px">
+    <div style="width:100%;overflow-y:auto;flex:1">
+      <h2 style="margin-bottom:10px">ΚΑΝΟΝΕΣ</h2>
+      <p style="text-align:left;line-height:1.9;font-size:.9rem">
+        🎯 <b>Στόχος:</b> Βρες τον κρυφό αριθμό σε όσο λιγότερες κινήσεις μπορείς!<br>
+        📱 <b>Τοπικό:</b> Κάθε παίκτης παίζει στο ίδιο κινητό, σειρά-σειρά.<br>
+        🌍 <b>Online:</b> Κάθε παίκτης στο δικό του κινητό — ταυτόχρονα!<br>
+        🔄 <b>Γύροι:</b> Ορίζεις X γύρους. Νικά όποιος έχει τις λιγότερες κινήσεις συνολικά!<br>
+        🏆 <b>Ισοβαθμία:</b> Λιγότερος χρόνος = νίκη!<br>
+        ↑↓ <b>Βέλη:</b> Δείχνουν αν ο αριθμός είναι μεγαλύτερος ή μικρότερος.<br>
+        🌡 <b>Φόντο:</b> Αλλάζει χρώμα καθώς πλησιάζεις στον αριθμό!<br>
+        ⏱ <b style="color:#4FC3F7">Countdown:</b> Προαιρετικό χρονόμετρο πίεσης ανά παίκτη.
+      </p>
+      <div class="divider"></div>
+      <p style="font-size:.85rem;letter-spacing:1px;margin-bottom:10px;text-align:center">
+        <span style="color:#FFD700;font-weight:700">© ΤΑΧΜΑΖΙΔΗΣ Κ. ΓΙΩΡΓΟΣ</span>
+        <span style="color:#555;margin-left:8px">·</span>
+        <span style="color:var(--gold);font-weight:700;margin-left:8px;background:rgba(255,215,0,.1);padding:2px 8px;border-radius:2px;border:1px solid rgba(255,215,0,.25)">V3.0</span>
+      </p>
+    </div>
+    <button class="btn btn-primary" onclick="closeInfoModal()" style="width:100%;flex-shrink:0;margin-top:8px">ΚΛΕΙΣΙΜΟ</button>
+  </div>
+</div>
+
+<script>
+// ══ FIREBASE ══
+var firebaseConfig={apiKey:"AIzaSyCo_7BxcBvQFvQDCFy-d-pmwfxZ8meZTKo",authDomain:"divide-and-rule.firebaseapp.com",databaseURL:"https://divide-and-rule-default-rtdb.europe-west1.firebasedatabase.app",projectId:"divide-and-rule",storageBucket:"divide-and-rule.firebasestorage.app",messagingSenderId:"545709688414",appId:"1:545709688414:web:5bb53aca588244628a56cf"};
+firebase.initializeApp(firebaseConfig);
+var db=firebase.database();
+
+// ══ COLORS ══
+var PC=[
+  {main:"#FF1F1F",shadow:"rgba(255,31,31,.35)",bg:"rgba(255,31,31,.08)"},
+  {main:"#1565FF",shadow:"rgba(21,101,255,.35)",bg:"rgba(21,101,255,.08)"},
+  {main:"#FFD700",shadow:"rgba(255,215,0,.35)",bg:"rgba(255,215,0,.08)"},
+  {main:"#00CC66",shadow:"rgba(0,204,102,.35)",bg:"rgba(0,204,102,.08)"},
+  {main:"#FF8C00",shadow:"rgba(255,140,0,.35)",bg:"rgba(255,140,0,.08)"},
+  {main:"#AA44FF",shadow:"rgba(170,68,255,.35)",bg:"rgba(170,68,255,.08)"}
+];
+var HOF_COLORS=["#FFD700","#bbb","#CD7F32","#6C63FF","#4ECDC4","#FF6B6B","#FF8C42","#A8E6CF","#FF6B6B","#aaa"];
+var HOF_KEY="dbv3_hof";
+function pc(i){return PC[i%PC.length];}
+function fmtTime(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");}
+
+// ══ STATE ══
+var gameMode="local",isHost=false,roomCode=null,myPlayerId=null,myPlayerName="",roomRef=null;
+var target=1,maxNum=100,lo=1,hi=100,totalAttempts=0,round=1,totalRounds=3;
+var timerInterval=null,gameActive=false;
+var players=[],currentIdx=0,countdownSec=0,countdownLeft=0,countdownInterval=null;
+var playerResults=[],roundResults=[],roundTarget=0,roundElapsed=0,roundTimer=null;
+var npValue="";
+var isMobile=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+var hallOfFame=[];
+
+// ══ INIT ══
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&gameActive&&!isMobile){e.preventDefault();handleGuess();}});
+window.onload=function(){
+  try{var h=localStorage.getItem(HOF_KEY);if(h)hallOfFame=JSON.parse(h);}catch(e){}
+  renderPlayerInputs();
+  // Stars
+  var sc=document.getElementById("spStars");
+  for(var i=0;i<60;i++){
+    var s=document.createElement("div");s.className="sp-star";
+    var sz=Math.random()*2.5+.8;
+    s.style.cssText="width:"+sz+"px;height:"+sz+"px;left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;--d:"+(1.5+Math.random()*3)+"s;--delay:"+(Math.random()*3)+"s";
+    sc.appendChild(s);
+  }
+  window._splashTimer=setTimeout(closeSplash,4200);
+};
+
+function closeSplash(){
+  clearTimeout(window._splashTimer);
+  playFanfare();
+  var sp=document.getElementById("splash");
+  sp.classList.add("out");
+  setTimeout(function(){sp.style.display="none";document.getElementById("topbar").style.display="flex";},750);
+}
+
+// ══ MODE ══
+function selectMode(m){
+  gameMode=m;
+  document.getElementById("modeLocal").classList.toggle("active",m==="local");
+  document.getElementById("modeOnline").classList.toggle("active",m==="online");
+  document.getElementById("localSettings").style.display=m==="local"?"block":"none";
+  document.getElementById("onlineSettings").style.display=m==="online"?"block":"none";
+}
+
+function renderPlayerInputs(){
+  var n=parseInt(document.getElementById("numPlayers").value);
+  var cont=document.getElementById("playerInputs");
+  var existing=Array.from(cont.querySelectorAll("input")).map(function(i){return i.value;});
+  cont.innerHTML="";
+  for(var i=0;i<n;i++){
+    var c=pc(i),inp=document.createElement("input");
+    inp.className="name-input";inp.type="text";inp.placeholder="Π"+(i+1);
+    inp.value=existing[i]||"";
+    inp.style.cssText="border-color:"+c.main+";color:"+c.main+";flex:1;min-width:80px;max-width:120px;padding:10px 6px;width:auto";
+    cont.appendChild(inp);
+  }
+  setTimeout(function(){var f=cont.querySelector("input");if(f)f.focus();},100);
+}
+
+function backToMode(){hideAllModals();document.getElementById("modeModal").classList.add("show");}
+
+// ══ LOCAL GAME ══
+function startLocalGame(){
+  var inputs=Array.from(document.getElementById("playerInputs").querySelectorAll("input"));
+  var names=inputs.map(function(i){return i.value.trim();});
+  if(names.some(function(n){return!n;})){alert("Γράψε όνομα για κάθε παίκτη!");return;}
+  var m=parseInt(document.getElementById("maxInput").value);
+  if(isNaN(m)||m<2||m>100000){alert("Βάλε μέγιστο 2-100000!");return;}
+  var r=parseInt(document.getElementById("roundsInput").value)||1;
+  var cd=parseInt(document.getElementById("countdownInput").value)||0;
+  maxNum=m;totalRounds=r;countdownSec=cd;
+  players=names.map(function(name,i){return{name:name,attempts:0,lastGuess:null,color:i,totalAttempts:0,totalTime:0};});
+  roundResults=players.map(function(){return[];});
+  hideAllModals();
+  document.getElementById("gameArea").style.display="flex";
+  round=1;currentIdx=0;
+  startRound();
+}
+
+function startRound(){
+  target=Math.floor(Math.random()*maxNum)+1;
+  roundTarget=target;lo=1;hi=maxNum;playerResults=[];
+  players.forEach(function(p){p.attempts=0;p.lastGuess=null;});
+  document.getElementById("statRound").textContent=round+"/"+totalRounds;
+  document.getElementById("direction").classList.add("hidden");
+  document.body.className="";
+  initNumpad();updateBar();renderChips();
+  currentIdx=0;startPlayerRound();
+}
+
+function startPlayerRound(){
+  lo=1;hi=maxNum;
+  npValue="";updateNpDisplay();updateBar();
+  roundElapsed=0;clearInterval(roundTimer);
+  roundTimer=setInterval(function(){roundElapsed++;document.getElementById("statTime").textContent=fmtTime(roundElapsed);},1000);
+  players[currentIdx].attempts=0;players[currentIdx].lastGuess=null;
+  document.getElementById("statAttempts").textContent="0";
+  document.getElementById("message").textContent="ΜΑΝΤΕΨΕ ΕΝΑΝ ΑΡΙΘΜΟ";
+  document.getElementById("direction").classList.add("hidden");
+  applyTheme(currentIdx);renderChips();updateCurrentPlayer();
+  document.body.className="";
+  gameActive=true;
+  if(countdownSec) startCountdown();
+  initNumpad();
+}
+
+function endPlayerRound(found){
+  clearInterval(roundTimer);
+  playerResults.push({name:players[currentIdx].name,attempts:players[currentIdx].attempts,time:roundElapsed,found:found,idx:currentIdx});
+  gameActive=false;
+  document.getElementById("direction").classList.add("hidden");
+  npValue="";updateNpDisplay();
+  var nextIdx=currentIdx+1;
+  if(nextIdx<players.length){
+    var nextName=players[nextIdx].name;
+    document.getElementById("message").textContent="✓ "+players[currentIdx].name+" ΤΕΛΕΙΩΣΕ";
+    var cb=document.getElementById("checkBtn");
+    cb.textContent="▶ "+nextName+" — ΕΝΑΡΞΗ";
+    cb.onclick=function(){
+      currentIdx=nextIdx;gameActive=true;
+      cb.textContent="ΕΛΕΓΧΟΣ";cb.onclick=handleGuess;
+      startPlayerRound();
+    };
+  } else {
+    document.getElementById("message").textContent="🏁 ΟΛΟΙ ΕΠΑΙΞΑΝ";
+    setTimeout(showRoundResults,600);
+  }
+}
+
+function showRoundResults(){
+  var sorted=playerResults.slice().sort(function(a,b){
+    if(a.found&&!b.found)return -1;if(!a.found&&b.found)return 1;
+    if(a.attempts!==b.attempts)return a.attempts-b.attempts;
+    return a.time-b.time;
+  });
+  sorted.forEach(function(r,rank){
+    roundResults[r.idx].push({rank:rank+1,attempts:r.attempts,time:r.time,found:r.found});
+    players[r.idx].totalAttempts+=r.attempts;
+    players[r.idx].totalTime+=r.time;
+  });
+  document.getElementById("rrTitle").textContent=round<totalRounds?"ΓΥΡΟΣ "+round+" — ΑΠΟΤΕΛΕΣΜΑΤΑ":"ΤΕΛΕΥΤΑΙΟΣ ΓΥΡΟΣ!";
+  document.getElementById("rrSub").textContent="🎯 ΑΡΙΘΜΟΣ ΗΤAN: "+roundTarget;
+  document.getElementById("rrTable").innerHTML=sorted.map(function(r,i){
+    var c=pc(r.idx),medal=["🥇","🥈","🥉"][i]||"•";
+    return "<tr><td style='width:32px;font-size:1.2rem'>"+medal+"</td>"
+      +"<td style='color:"+c.main+";font-weight:700;letter-spacing:1px'>"+r.name+"</td>"
+      +"<td style='text-align:right;color:"+c.main+";font-family:Space Mono,monospace'>"+r.attempts+"</td>"
+      +"<td style='text-align:right;color:#666;font-family:Space Mono,monospace;font-size:.85rem'>"+fmtTime(r.time)+"</td></tr>";
+  }).join("");
+  var totals=players.map(function(p,i){return{name:p.name,idx:i,tot:p.totalAttempts,time:p.totalTime};})
+    .sort(function(a,b){return a.tot!==b.tot?a.tot-b.tot:a.time-b.time;});
+  document.getElementById("rrTotals").innerHTML="▸ "+totals.map(function(t,i){
+    return (["🥇","🥈","🥉"][i]||"·")+" "+t.name+" ("+t.tot+")";
+  }).join(" &nbsp;");
+  var isLast=round>=totalRounds;
+  document.getElementById("nextRoundBtn").style.display=isLast?"none":"block";
+  document.getElementById("finalBtn").style.display=isLast?"block":"none";
+  document.getElementById("roundResultsModal").classList.add("show");
+}
+
+function nextRound(){
+  document.getElementById("roundResultsModal").classList.remove("show");
+  round++;currentIdx=0;gameActive=true;
+  var cb=document.getElementById("checkBtn");cb.textContent="ΕΛΕΓΧΟΣ";cb.onclick=handleGuess;
+  startRound();
+}
+
+function showFinalResults(){
+  document.getElementById("roundResultsModal").classList.remove("show");
+  var totals=players.map(function(p,i){return{name:p.name,idx:i,tot:p.totalAttempts,time:p.totalTime};})
+    .sort(function(a,b){return a.tot!==b.tot?a.tot-b.tot:a.time-b.time;});
+  document.getElementById("frSub").textContent=totalRounds+" ΓΥΡΟΙ · ΝΙΚΑ ΜΕ ΛΙΓΟΤΕΡΕΣ ΚΙΝΗΣΕΙΣ";
+  document.getElementById("frTable").innerHTML=totals.map(function(t,i){
+    var c=pc(t.idx),medal=["🥇","🥈","🥉"][i]||"•";
+    return "<tr><td style='width:36px;font-size:1.3rem'>"+medal+"</td>"
+      +"<td style='color:"+c.main+";font-weight:700;font-size:1.1rem;letter-spacing:1px'>"+t.name+"</td>"
+      +"<td style='text-align:right;color:"+c.main+";font-family:Space Mono,monospace'>"+t.tot+"</td>"
+      +"<td style='text-align:right;color:#666;font-family:Space Mono,monospace;font-size:.85rem'>"+fmtTime(t.time)+"</td></tr>";
+  }).join("");
+  var w=totals[0],wc=pc(w.idx);
+  startFireworks();soundWin();
+  var wt=document.getElementById("winText");
+  wt.textContent="🏆 "+w.name+" ΝΙΚΗΣΕ 🏆";
+  wt.style.color=wc.main;wt.style.textShadow="0 0 40px "+wc.main;
+  document.getElementById("winSub").textContent="⚡ "+w.tot+" ΚΙΝΗΣΕΙΣ  ·  ⏱ "+fmtTime(w.time);
+  document.getElementById("winBanner").classList.add("show");
+  setTimeout(function(){stopFireworks();document.getElementById("winBanner").classList.remove("show");document.getElementById("finalResultsModal").classList.add("show");},3500);
+  saveScore(w.name,w.tot,w.time);
+}
+
+// ══ ONLINE ══
+function createRoom(){hideAllModals();document.getElementById("createRoomModal").classList.add("show");setTimeout(function(){document.getElementById("hostName").focus();},200);}
+function showJoinRoom(){hideAllModals();document.getElementById("joinRoomModal").classList.add("show");setTimeout(function(){document.getElementById("joinName").focus();},200);}
+function generateCode(){return String(Math.floor(1000+Math.random()*9000));}
+
+function createRoomConfirm(){
+  var name=document.getElementById("hostName").value.trim();
+  if(!name){alert("Γράψε το όνομά σου!");return;}
+  var m=parseInt(document.getElementById("onlineMaxInput").value)||100;
+  var r=parseInt(document.getElementById("onlineRoundsInput").value)||3;
+  isHost=true;myPlayerName=name;maxNum=m;totalRounds=r;
+  roomCode=generateCode();myPlayerId="host";
+  roomRef=db.ref("rooms/"+roomCode);
+  roomRef.set({host:name,maxNum:m,totalRounds:r,status:"waiting",target:0,round:1,players:{host:{name:name,color:0,ready:false,totalAttempts:0,totalTime:0}}});
+  roomRef.child("players").on("value",function(snap){updateLobby(snap.val()||{},true);});
+  roomRef.child("status").on("value",function(snap){if(snap.val()==="playing")onGameStart();});
+  hideAllModals();
+  document.getElementById("roomCodeDisplay").textContent=roomCode;
+  document.getElementById("waitingRoomModal").classList.add("show");
+}
+
+function joinRoomConfirm(){
+  var name=document.getElementById("joinName").value.trim();
+  var code=document.getElementById("joinCode").value.trim();
+  if(!name){alert("Γράψε το όνομά σου!");return;}
+  if(!code||code.length!==4){alert("Βάλε 4ψήφιο κωδικό!");return;}
+  db.ref("rooms/"+code).once("value",function(snap){
+    if(!snap.exists()){alert("Δεν βρέθηκε δωμάτιο!");return;}
+    var room=snap.val();
+    if(room.status!=="waiting"){alert("Το παιχνίδι έχει ξεκινήσει!");return;}
+    isHost=false;myPlayerName=name;roomCode=code;
+    myPlayerId="p_"+Date.now();
+    maxNum=room.maxNum||100;totalRounds=room.totalRounds||3;
+    roomRef=db.ref("rooms/"+code);
+    var colorIdx=Object.keys(room.players||{}).length;
+    roomRef.child("players/"+myPlayerId).set({name:name,color:colorIdx,ready:false,totalAttempts:0,totalTime:0});
+    roomRef.child("players").on("value",function(s){updateLobby(s.val()||{},false);});
+    roomRef.child("status").on("value",function(s){if(s.val()==="playing")onGameStart();});
+    hideAllModals();
+    document.getElementById("guestRoomCode").textContent=code;
+    document.getElementById("guestWaitModal").classList.add("show");
+  });
+}
+
+function updateLobby(ps,isHostView){
+  var list=Object.values(ps);
+  var html=list.map(function(p,i){
+    var c=pc(p.color||i);
+    return "<div class='lobby-player' style='background:"+c.bg+";color:"+c.main+";border:1px solid "+c.main+"33'>"
+      +(i===0?"👑":"👤")+" <span style='font-weight:700'>"+p.name+"</span>"
+      +(i===0?"<span style='margin-left:auto;font-size:.7rem;color:#666;letter-spacing:1px'>HOST</span>":"")
+      +"</div>";
+  }).join("");
+  if(isHostView){
+    document.getElementById("lobbyPlayers").innerHTML=html;
+    var sob=document.getElementById("startOnlineBtn");
+    sob.disabled=list.length<2;
+    sob.textContent=list.length<2?"⏳ ΑΝΑΜΟΝΗ ΠΑΙΚΤΩΝ...":"▶ ΕΝΑΡΞΗ ("+list.length+" ΠΑΙΚΤΕΣ)";
+  } else {
+    document.getElementById("guestLobbyPlayers").innerHTML=html;
+  }
+}
+
+function startOnlineGame(){
+  if(!isHost)return;
+  var t=Math.floor(Math.random()*maxNum)+1;
+  roomRef.update({status:"playing",target:t,round:1});
+}
+
+function onGameStart(){
+  roomRef.child("target").once("value",function(snap){target=snap.val();roundTarget=target;});
+  roomRef.child("players").once("value",function(snap){
+    var ps=snap.val()||{};
+    players=Object.entries(ps).map(function(e,i){return{name:e[1].name,attempts:0,lastGuess:null,color:e[1].color||i,totalAttempts:0,totalTime:0,uid:e[0]};});
+    roundResults=players.map(function(){return[];});
+    hideAllModals();
+    document.getElementById("gameArea").style.display="flex";
+    round=1;currentIdx=0;gameActive=true;
+    for(var i=0;i<players.length;i++){if(players[i].uid===myPlayerId){currentIdx=i;break;}}
+    showBigCountdown(3,function(){startOnlinePlayerRound();});
+  });
+}
+
+function startOnlinePlayerRound(){
+  lo=1;hi=maxNum;npValue="";updateNpDisplay();updateBar();
+  roundElapsed=0;clearInterval(roundTimer);
+  roundTimer=setInterval(function(){roundElapsed++;document.getElementById("statTime").textContent=fmtTime(roundElapsed);},1000);
+  players[currentIdx].attempts=0;
+  document.getElementById("statAttempts").textContent="0";
+  document.getElementById("message").textContent="ΜΑΝΤΕΨΕ ΕΝΑΝ ΑΡΙΘΜΟ";
+  document.getElementById("direction").classList.add("hidden");
+  document.getElementById("cpName").textContent=myPlayerName;
+  applyTheme(currentIdx);gameActive=true;initNumpad();
+  document.body.className="";
+}
+
+function endOnlinePlayerRound(found){
+  clearInterval(roundTimer);gameActive=false;
+  roomRef.child("results/round"+round+"/"+myPlayerId).set({name:myPlayerName,attempts:players[currentIdx].attempts,time:roundElapsed,found:found,color:players[currentIdx].color});
+  document.getElementById("message").textContent=found?"🎉 ΒΡΗΚΕΣ!":"⏱ ΤΕΛΕΙΩΣΕ Ο ΓΥΡΟΣ";
+  document.getElementById("checkBtn").style.display="none";
+  waitForAllOnlineResults();
+}
+
+function waitForAllOnlineResults(){
+  roomRef.child("results/round"+round).on("value",function(snap){
+    var res=snap.val()||{};
+    if(Object.keys(res).length>=players.length){
+      roomRef.child("results/round"+round).off();
+      showOnlineRoundResults(res);
+    } else {
+      document.getElementById("message").textContent="⏳ ΑΝΑΜΟΝΗ... ("+Object.keys(res).length+"/"+players.length+")";
+    }
+  });
+}
+
+function showOnlineRoundResults(res){
+  var sorted=Object.values(res).sort(function(a,b){
+    if(a.found&&!b.found)return -1;if(!a.found&&b.found)return 1;
+    if(a.attempts!==b.attempts)return a.attempts-b.attempts;
+    return a.time-b.time;
+  });
+  document.getElementById("rrTitle").textContent=round<totalRounds?"ΓΥΡΟΣ "+round+" — ΑΠΟΤΕΛΕΣΜΑΤΑ":"ΤΕΛΕΥΤΑΙΟΣ ΓΥΡΟΣ!";
+  document.getElementById("rrSub").textContent="🎯 ΑΡΙΘΜΟΣ ΗΤAN: "+roundTarget;
+  document.getElementById("rrTable").innerHTML=sorted.map(function(r,i){
+    var c=pc(r.color||i),medal=["🥇","🥈","🥉"][i]||"•";
+    return "<tr><td style='width:32px;font-size:1.2rem'>"+medal+"</td><td style='color:"+c.main+";font-weight:700;letter-spacing:1px'>"+r.name+"</td><td style='text-align:right;color:"+c.main+";font-family:Space Mono,monospace'>"+r.attempts+"</td><td style='text-align:right;color:#666;font-family:Space Mono,monospace;font-size:.85rem'>"+fmtTime(r.time)+"</td></tr>";
+  }).join("");
+  var isLast=round>=totalRounds;
+  document.getElementById("nextRoundBtn").style.display=isLast?"none":"block";
+  document.getElementById("finalBtn").style.display=isLast?"block":"none";
+  document.getElementById("roundResultsModal").classList.add("show");
+  document.getElementById("checkBtn").style.display="block";
+}
+
+// ══ HANDLE GUESS ══
+function handleGuess(){
+  if(!gameActive)return;
+  clearInterval(countdownInterval);
+  var raw=isMobile?npValue:document.getElementById("guessInput").value;
+  var val=parseInt(raw);
+  if(isNaN(val)||val<1||val>maxNum){alert("Δώσε αριθμό 1-"+maxNum+"!");document.getElementById("guessInput").value="";npValue="";updateNpDisplay();return;}
+  var p=players[currentIdx];
+  p.attempts++;p.lastGuess=val;
+  document.getElementById("statAttempts").textContent=p.attempts;
+  document.getElementById("guessInput").value="";npValue="";updateNpDisplay();
+  if(!isMobile)setTimeout(function(){document.getElementById("guessInput").focus();},50);
+  var dir=document.getElementById("direction");
+  var ga=document.getElementById("gameArea");
+
+  if(val===target){
+    soundCorrect();
+    document.getElementById("message").textContent="✓ ΣΩΣΤΟ!";
+    dir.classList.add("hidden");lo=target;hi=target;updateBar();
+    ga.classList.add("flash-right");setTimeout(function(){ga.classList.remove("flash-right");},500);
+    setTimeout(function(){
+      if(gameMode==="online")endOnlinePlayerRound(true);
+      else endPlayerRound(true);
+    },500);
+  } else {
+    soundWrong();
+    ga.classList.add("flash-wrong");setTimeout(function(){ga.classList.remove("flash-wrong");},500);
+    document.getElementById("message").textContent="✗ "+p.name+": ΛΑΘΟΣ";
+    if(val<target){dir.textContent="▲ ΜΕΓΑΛΥΤΕΡΟ ▲";lo=Math.max(lo,val+1);}
+    else{dir.textContent="▼ ΜΙΚΡΟΤΕΡΟ ▼";hi=Math.min(hi,val-1);}
+    dir.classList.remove("hidden");updateBar();
+    // proximity bg
+    var pct=(hi-lo)/maxNum;
+    if(pct<0.05)document.body.className="theme-red";
+    else if(pct<0.25)document.body.className="theme-blue";
+    else document.body.className="";
+    if(lo>hi){
+      if(gameMode==="online")endOnlinePlayerRound(false);
+      else endPlayerRound(false);
+    }
+  }
+}
+
+// ══ UI HELPERS ══
+function applyTheme(i){
+  var c=pc(i);
+  var cb=document.getElementById("cpBlock");
+  cb.style.borderLeftColor=c.main;
+  cb.style.background="linear-gradient(90deg,"+c.bg+",transparent)";
+  document.getElementById("cpName").style.color=c.main;
+  var gi=document.getElementById("guessInput");
+  gi.style.borderColor=c.main;gi.style.color=c.main;
+  document.getElementById("checkBtn").style.background=c.main;
+  document.getElementById("rangeFill").style.background="linear-gradient(90deg,"+c.main+"55,"+c.main+")";
+  document.getElementById("direction").style.color=c.main;
+  var nd=document.getElementById("npDisplay");
+  nd.style.borderColor=c.main;nd.style.color=c.main;
+  Array.from(document.querySelectorAll(".npk:not(.npk-del)")).forEach(function(k){k.style.background=c.bg;k.style.borderColor=c.main+"33;";k.style.color=c.main;});
+}
+
+function updateCurrentPlayer(){
+  document.getElementById("cpName").textContent=players[currentIdx].name;
+  document.getElementById("statRound").textContent=round+"/"+totalRounds;
+}
+
+function renderChips(){
+  document.getElementById("playersRow").innerHTML=players.map(function(p,i){
+    var c=pc(i),active=i===currentIdx;
+    var st=active?"background:"+c.bg+";color:"+c.main+";border-color:"+c.main:"color:#333;border-color:#1a1a1a";
+    return "<div class='player-chip' style='"+st+"'>"+p.name+" ("+p.attempts+")</div>";
+  }).join("");
+}
+
+function updateBar(){
+  var l=(lo-1)/maxNum*100,w=(hi-lo+1)/maxNum*100;
+  document.getElementById("rangeFill").style.left=l+"%";
+  document.getElementById("rangeFill").style.width=w+"%";
+  document.getElementById("rangeMin").textContent=lo;
+  document.getElementById("rangeMax").textContent=hi;
+  document.getElementById("guessInput").placeholder=lo+"–"+hi;
+  document.getElementById("guessInput").min=lo;
+  document.getElementById("guessInput").max=hi;
+}
+
+function initNumpad(){
+  if(isMobile){
+    document.getElementById("numpadWrap").style.display="flex";
+    document.getElementById("guessInput").style.display="none";
+  } else {
+    document.getElementById("guessInput").style.display="block";
+    document.getElementById("numpadWrap").style.display="none";
+    setTimeout(function(){document.getElementById("guessInput").focus();},200);
+  }
+  npValue="";updateNpDisplay();
+}
+
+function npPress(d){if(npValue.length>=6)return;npValue+=d;updateNpDisplay();document.getElementById("guessInput").value=npValue;}
+function npDel(){npValue=npValue.slice(0,-1);updateNpDisplay();document.getElementById("guessInput").value=npValue;}
+function npClear(){npValue="";updateNpDisplay();document.getElementById("guessInput").value="";}
+function updateNpDisplay(){
+  var d=document.getElementById("npDisplay");
+  if(!npValue){d.textContent="αριθμός";d.classList.add("empty");}
+  else{d.textContent=npValue;d.classList.remove("empty");}
+}
+
+function startCountdown(){
+  clearInterval(countdownInterval);
+  var wrap=document.getElementById("countdownWrap");
+  if(!countdownSec){wrap.style.display="none";return;}
+  wrap.style.display="flex";countdownLeft=countdownSec;updateCdBar();
+  countdownInterval=setInterval(function(){
+    countdownLeft--;updateCdBar();
+    if(countdownLeft<=0){clearInterval(countdownInterval);if(gameActive){soundWrong();endPlayerRound(false);}}
+  },1000);
+}
+function updateCdBar(){
+  var pct=(countdownLeft/countdownSec)*100;
+  var f=document.getElementById("cdFill");
+  f.style.width=pct+"%";
+  f.style.background="rgb("+Math.floor(255*(1-pct/100))+","+Math.floor(200*(pct/100))+",0)";
+  document.getElementById("cdText").textContent=countdownLeft+"s ΑΠΟΜΕΝΟΥΝ";
+}
+
+// ══ 3-2-1 ══
+function showBigCountdown(n,cb){
+  var ov=document.getElementById("countdownOverlay"),num=document.getElementById("bigNum"),sub=document.getElementById("bigSub");
+  ov.classList.add("show");var cur=n;
+  function tick(){
+    if(cur>0){
+      num.textContent=cur;num.style.animation="none";num.offsetHeight;num.style.animation="bigPop .7s cubic-bezier(.175,.885,.32,1.275)";
+      sub.textContent="ΕΤΟΙΜΑΣΤΕΙΤΕ";cur--;setTimeout(tick,1000);
+    } else {
+      num.textContent="▶";sub.textContent="ΠΑΙΖΟΥΜΕ!";
+      setTimeout(function(){ov.classList.remove("show");if(cb)cb();},700);
+    }
+  }
+  tick();
+}
+
+// ══ MODALS ══
+function hideAllModals(){document.querySelectorAll(".overlay").forEach(function(m){m.classList.remove("show");});}
+function newGame(){
+  hideAllModals();
+  document.getElementById("gameArea").style.display="none";
+  clearInterval(timerInterval);clearInterval(roundTimer);clearInterval(countdownInterval);
+  gameActive=false;document.body.className="";
+  round=1;players=[];roundResults=[];
+  renderPlayerInputs();
+  document.getElementById("modeModal").classList.add("show");
+}
+function leaveGame(){if(confirm("Έξοδος;")){leaveRoom();newGame();}}
+function leaveRoom(){
+  if(roomRef){
+    if(isHost)roomRef.remove();
+    else if(myPlayerId)roomRef.child("players/"+myPlayerId).remove();
+    roomRef=null;
+  }
+  hideAllModals();
+  document.getElementById("gameArea").style.display="none";
+  document.getElementById("modeModal").classList.add("show");
+}
+function showInfoModal(){document.getElementById("infoModal").classList.add("show");}
+function closeInfoModal(){document.getElementById("infoModal").classList.remove("show");}
+function showHof(){renderHof();document.getElementById("hofModal").classList.add("show");}
+function closeHof(){document.getElementById("hofModal").classList.remove("show");}
+
+// ══ HALL OF FAME ══
+function saveScore(name,att,time){
+  hallOfFame.push({name:name,attempts:att,time:time,maxNum:maxNum,rounds:totalRounds,date:new Date().toLocaleDateString("el-GR")});
+  hallOfFame.sort(function(a,b){return a.attempts!==b.attempts?a.attempts-b.attempts:a.time-b.time;});
+  hallOfFame=hallOfFame.slice(0,10);
+  localStorage.setItem(HOF_KEY,JSON.stringify(hallOfFame));
+}
+function renderHof(){
+  var t=document.getElementById("hofTable");
+  if(!hallOfFame.length){t.innerHTML='<tr><td colspan="3" style="color:#444;text-align:center;padding:24px;letter-spacing:2px;font-size:.85rem">ΚΑΝΕΝΑ ΣΚΟΡ ΑΚΟΜΑ</td></tr>';return;}
+  t.innerHTML=hallOfFame.map(function(e,i){
+    var medal=["🥇","🥈","🥉"][i]||(i+1)+".";
+    return "<tr><td style='width:40px;font-size:1.2rem;text-align:center'>"+medal+"</td>"
+      +"<td><div style='font-weight:700;color:"+HOF_COLORS[i]+";letter-spacing:1px'>"+e.name+"</div>"
+      +"<div style='font-size:.7rem;color:#444;letter-spacing:1px'>"+e.date+" · "+e.rounds+" γύροι · max "+e.maxNum+"</div></td>"
+      +"<td><div style='text-align:right;font-weight:700;color:"+HOF_COLORS[i]+";font-family:Space Mono,monospace'>"+e.attempts+"</div>"
+      +"<div style='text-align:right;color:#555;font-family:Space Mono,monospace;font-size:.8rem'>"+fmtTime(e.time)+"</div></td></tr>";
+  }).join("");
+}
+function clearHof(){if(!confirm("Διαγραφή όλων;"))return;hallOfFame=[];localStorage.removeItem(HOF_KEY);renderHof();}
+
+// ══ CHIPTUNE AUDIO ENGINE ══
+var audioCtx=null;
+function getCtx(){
+  if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==="suspended")audioCtx.resume();
+  return audioCtx;
+}
+
+// Core chip note: square wave + slight detune for fatness
+function chipNote(freq,dur,vol,delay,type){
+  type=type||"square";vol=vol||.18;delay=delay||0;
+  try{
+    var ctx=getCtx(),t=ctx.currentTime+delay;
+    var osc=ctx.createOscillator(),osc2=ctx.createOscillator();
+    var gain=ctx.createGain(),filter=ctx.createBiquadFilter();
+    filter.type="lowpass";filter.frequency.value=2200;filter.Q.value=1;
+    osc.connect(filter);osc2.connect(filter);filter.connect(gain);gain.connect(ctx.destination);
+    osc.type=type;osc.frequency.setValueAtTime(freq,t);
+    osc2.type=type;osc2.frequency.setValueAtTime(freq*1.005,t); // slight detune
+    gain.gain.setValueAtTime(0,t);
+    gain.gain.linearRampToValueAtTime(vol,t+0.01);
+    gain.gain.setValueAtTime(vol,t+dur*0.7);
+    gain.gain.exponentialRampToValueAtTime(0.001,t+dur);
+    osc.start(t);osc.stop(t+dur+.05);
+    osc2.start(t);osc2.stop(t+dur+.05);
+  }catch(e){}
+}
+
+// Noise burst for drums
+function chipNoise(dur,vol,delay){
+  try{
+    var ctx=getCtx(),t=ctx.currentTime+(delay||0);
+    var buf=ctx.createBuffer(1,ctx.sampleRate*dur,ctx.sampleRate);
+    var data=buf.getChannelData(0);
+    for(var i=0;i<data.length;i++)data[i]=(Math.random()*2-1);
+    var src=ctx.createBufferSource(),gain=ctx.createGain(),hpf=ctx.createBiquadFilter();
+    hpf.type="highpass";hpf.frequency.value=1000;
+    src.buffer=buf;src.connect(hpf);hpf.connect(gain);gain.connect(ctx.destination);
+    gain.gain.setValueAtTime(vol||.12,t);
+    gain.gain.exponentialRampToValueAtTime(.001,t+dur);
+    src.start(t);src.stop(t+dur+.05);
+  }catch(e){}
+}
+
+// Kick drum sim
+function chipKick(delay){
+  try{
+    var ctx=getCtx(),t=ctx.currentTime+(delay||0);
+    var osc=ctx.createOscillator(),gain=ctx.createGain();
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.type="sine";
+    osc.frequency.setValueAtTime(180,t);
+    osc.frequency.exponentialRampToValueAtTime(40,t+.08);
+    gain.gain.setValueAtTime(.5,t);
+    gain.gain.exponentialRampToValueAtTime(.001,t+.12);
+    osc.start(t);osc.stop(t+.15);
+  }catch(e){}
+}
+
+// ── Synth pop helpers (για λάθος) ──
+function synthNote(freq,dur,vol,delay){
+  try{
+    var ctx=getCtx(),t=ctx.currentTime+(delay||0);
+    var o=ctx.createOscillator(),o2=ctx.createOscillator(),g=ctx.createGain();
+    o.connect(g);o2.connect(g);g.connect(ctx.destination);
+    o.type="sawtooth";o.frequency.setValueAtTime(freq,t);
+    o2.type="sawtooth";o2.frequency.setValueAtTime(freq*1.008,t);
+    g.gain.setValueAtTime(0,t);
+    g.gain.linearRampToValueAtTime(vol||.14,t+.015);
+    g.gain.exponentialRampToValueAtTime(.001,t+dur);
+    o.start(t);o.stop(t+dur+.05);
+    o2.start(t);o2.stop(t+dur+.05);
+  }catch(e){}
+}
+
+// ── Minimal electronic helper (για νίκη) ──
+function sineRamp(freqStart,freqEnd,dur,vol,delay){
+  try{
+    var ctx=getCtx(),t=ctx.currentTime+(delay||0);
+    var o=ctx.createOscillator(),g=ctx.createGain();
+    o.connect(g);g.connect(ctx.destination);
+    o.type="sine";
+    o.frequency.setValueAtTime(freqStart,t);
+    o.frequency.linearRampToValueAtTime(freqEnd,t+dur*.6);
+    g.gain.setValueAtTime(0,t);
+    g.gain.linearRampToValueAtTime(vol||.2,t+.012);
+    // subtle shimmer layer
+    var o2=ctx.createOscillator(),g2=ctx.createGain();
+    o2.connect(g2);g2.connect(ctx.destination);
+    o2.type="sine";o2.frequency.setValueAtTime(freqEnd*2,t+dur*.3);
+    g2.gain.setValueAtTime(0,t+dur*.3);g2.gain.linearRampToValueAtTime((vol||.2)*.3,t+dur*.4);
+    g2.gain.exponentialRampToValueAtTime(.001,t+dur*.9);
+    o2.start(t+dur*.3);o2.stop(t+dur+.05);
+    g.gain.exponentialRampToValueAtTime(.001,t+dur);
+    o.start(t);o.stop(t+dur+.05);
+  }catch(e){}
+}
+
+// ✅ ΣΩΣΤΟ — Chiptune (Style 1): ascending arpeggio με shimmer
+function soundCorrect(){
+  [523,659,784,1047].forEach(function(f,i){
+    chipNote(f,.09,.2,i*.07,"square");
+    chipNote(f*2,.05,.04,i*.07+.01,"sine");
+  });
+  chipKick(0);
+  chipNoise(.04,.09,.08);
+}
+
+// ✗ ΛΑΘΟΣ — Synth Pop (Style 2): dissonant sawtooth drop
+function soundWrong(){
+  // Dissonant pair — minor 2nd interval
+  synthNote(440,.1,.2,0);
+  synthNote(415,.1,.18,.01);
+  // Drop
+  synthNote(220,.28,.22,.12);
+  synthNote(207,.28,.18,.13);
+  chipKick(.04);
+  chipNoise(.06,.12,0);
+}
+
+// 🏆 ΝΙΚΗ — Minimal Electronic (Style 4): clean rising sequence
+function soundWin(){
+  // Elegant rising sine tones
+  var notes=[523,659,784,988,1174,1318,988,1174,1568];
+  notes.forEach(function(f,i){
+    sineRamp(f*0.92,f,.22,.18,i*.1);
+  });
+  // Sub bass pulse
+  [0,.3,.6,.9].forEach(function(t){
+    try{
+      var ctx=getCtx(),ts=ctx.currentTime+t;
+      var o=ctx.createOscillator(),g=ctx.createGain();
+      o.connect(g);g.connect(ctx.destination);
+      o.type="sine";o.frequency.setValueAtTime(65,ts);
+      g.gain.setValueAtTime(.28,ts);g.gain.exponentialRampToValueAtTime(.001,ts+.2);
+      o.start(ts);o.stop(ts+.25);
+    }catch(e){}
+  });
+  // Clean kicks
+  [0,.3,.6,.9].forEach(function(t){chipKick(t);});
+  // Soft hats
+  [.15,.45,.75].forEach(function(t){chipNoise(.05,.07,t);});
+}
+
+// 🎮 SPLASH FANFARE — Chiptune (Style 1): catchy punchy jingle
+function playFanfare(){
+  var mel=[
+    [659,.1,0],[784,.1,.11],[880,.1,.22],[1047,.18,.33],
+    [880,.08,.54],[784,.08,.63],[880,.25,.72],
+    [523,.08,1.02],[659,.08,1.11],[784,.08,1.20],[1047,.08,1.29],[1175,.30,1.38]
+  ];
+  mel.forEach(function(n){if(n[0]>0){chipNote(n[0],n[1],.2,n[2],"square");chipNote(n[0]*2,n[1]*.8,.04,n[2]+.01,"sine");}});
+  var bass=[[262,.18,0],[392,.18,.33],[330,.18,.72],[523,.30,1.38]];
+  bass.forEach(function(n){chipNote(n[0],n[1],.14,n[2],"sawtooth");});
+  [0,.33,.72,1.02,1.38].forEach(function(t){chipKick(t);});
+  [.16,.50,.88,1.20].forEach(function(t){chipNoise(.04,.1,t);});
+}
+
+// ══ FIREWORKS ══
+var fwCv=document.getElementById("fwCanvas"),fwCtx=fwCv.getContext("2d"),fwParts=[],fwAnim=null,launchInt=null;
+function startFireworks(){fwCv.width=window.innerWidth;fwCv.height=window.innerHeight;fwCv.style.display="block";fwParts=[];var n=0;launchInt=setInterval(function(){explode(fwCv.width*(.2+Math.random()*.6),fwCv.height*(.1+Math.random()*.4));if(++n>=16)clearInterval(launchInt);},250);fwAnim=requestAnimationFrame(animFw);}
+function stopFireworks(){fwCv.style.display="none";cancelAnimationFrame(fwAnim);clearInterval(launchInt);fwParts=[];}
+function explode(x,y){for(var i=0;i<100;i++){var a=(Math.PI*2/100)*i+Math.random()*.3,sp=2+Math.random()*5;fwParts.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,alpha:1,color:"hsl("+(Math.floor(Math.random()*360))+",100%,60%)",sz:2+Math.random()*3,decay:.012+Math.random()*.01});}}
+function animFw(){fwCtx.fillStyle="rgba(0,0,0,.15)";fwCtx.fillRect(0,0,fwCv.width,fwCv.height);fwParts=fwParts.filter(function(p){return p.alpha>.05;});fwParts.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.vy+=.08;p.alpha-=p.decay;fwCtx.save();fwCtx.globalAlpha=p.alpha;fwCtx.fillStyle=p.color;fwCtx.beginPath();fwCtx.arc(p.x,p.y,p.sz,0,Math.PI*2);fwCtx.fill();fwCtx.restore();});fwAnim=requestAnimationFrame(animFw);}
+</script>
+
+
+<script>
+var manifestData = {"name": "\u0394\u0399\u0391\u0399\u03a1\u0395\u0399 & \u0392\u0391\u03a3\u0399\u039b\u0395\u03a5\u0395", "short_name": "\u0394&\u0392 v3.0", "start_url": ".", "display": "standalone", "background_color": "#0A0A0F", "theme_color": "#FFD700", "icons": [{"src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTFhMmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkIiBjeD0iNDAlIiBjeT0iMzAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZFNTY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRkZENzAwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I4ODYwQiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ic2hpbmUiIGN4PSIzNSUiIGN5PSIyNSUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkZGRkYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIGNpcmNsZSAtLT4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2JnKSIgcng9IjE4MCIvPgogIAogIDwhLS0gU3RhcnMgLS0+CiAgPHRleHQgeD0iMTIwIiB5PSIyMDAiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNiI+4piFPC90ZXh0PgogIDx0ZXh0IHg9Ijg2MCIgeT0iMTgwIiBmb250LXNpemU9IjUwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjUiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4MCIgeT0iODIwIiBmb250LXNpemU9IjQwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjQiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4ODAiIHk9Ijg1MCIgZm9udC1zaXplPSI1NSIgZmlsbD0iI0ZGRDcwMCIgb3BhY2l0eT0iMC41Ij7imIU8L3RleHQ+CiAgPHRleHQgeD0iNTAwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNCI+4piFPC90ZXh0PgoKICA8IS0tIFRyb3BoeSBib2R5IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDI4MCBMIDMyMCA1ODAgUSAzMjAgNjgwIDUxMiA3MDAgUSA3MDQgNjgwIDcwNCA1ODAgTCA3MDQgMjgwIFoiIAogICAgICAgIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgCiAgPCEtLSBUcm9waHkgaGFuZGxlcyBsZWZ0IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDMyMCBRIDIwMCAzMjAgMjAwIDQ0MCBRIDIwMCA1NDAgMzIwIDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAKICA8IS0tIFRyb3BoeSBoYW5kbGVzIHJpZ2h0IC0tPgogIDxwYXRoIGQ9Ik0gNzA0IDMyMCBRIDgyNCAzMjAgODI0IDQ0MCBRIDgyNCA1NDAgNzA0IDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBTaGluZSBvbiB0cm9waHkgLS0+CiAgPHBhdGggZD0iTSAzMjAgMjgwIEwgMzIwIDU4MCBRIDMyMCA2ODAgNTEyIDcwMCBRIDcwNCA2ODAgNzA0IDU4MCBMIDcwNCAyODAgWiIgCiAgICAgICAgZmlsbD0idXJsKCNzaGluZSkiLz4KCiAgPCEtLSBUcm9waHkgc3RlbSAtLT4KICA8cmVjdCB4PSI0NjIiIHk9IjcwMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMjAiIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgCiAgPCEtLSBUcm9waHkgYmFzZSAtLT4KICA8cmVjdCB4PSIzNDAiIHk9IjgyMCIgd2lkdGg9IjM0NCIgaGVpZ2h0PSI2MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNCODg2MEIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxyZWN0IHg9IjM2MCIgeT0iODQwIiB3aWR0aD0iMzA0IiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNGRkU1NjYiIG9wYWNpdHk9IjAuNSIvPgoKICA8IS0tIFN0YXIgaW4gdHJvcGh5IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iNTYwIiBmb250LXNpemU9IjE4MCIgZmlsbD0iI0ZGRjhEQyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC45Ij7imIU8L3RleHQ+CiAgCiAgPCEtLSDOlM6ZzpHOmc6hzpXOmSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iOTYwIiBmb250LXNpemU9IjcyIiBmaWxsPSIjRkYwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiPs6UzpnOkc6ZzqHOlc6ZPC90ZXh0PgogIAogIDwhLS0gRGVjb3JhdGl2ZSBsaW5lcyAtLT4KICA8bGluZSB4MT0iMjAwIiB5MT0iMjUwIiB4Mj0iODI0IiB5Mj0iMjUwIiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==", "sizes": "192x192", "type": "image/svg+xml"}, {"src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDI0IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPgogIDwhLS0gQmFja2dyb3VuZCAtLT4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTFhMmUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJnb2xkIiBjeD0iNDAlIiBjeT0iMzAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZFNTY2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjRkZENzAwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I4ODYwQiIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ic2hpbmUiIGN4PSIzNSUiIGN5PSIyNSUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkZGRkYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIGNpcmNsZSAtLT4KICA8cmVjdCB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiBmaWxsPSJ1cmwoI2JnKSIgcng9IjE4MCIvPgogIAogIDwhLS0gU3RhcnMgLS0+CiAgPHRleHQgeD0iMTIwIiB5PSIyMDAiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNiI+4piFPC90ZXh0PgogIDx0ZXh0IHg9Ijg2MCIgeT0iMTgwIiBmb250LXNpemU9IjUwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjUiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4MCIgeT0iODIwIiBmb250LXNpemU9IjQwIiBmaWxsPSIjRkZENzAwIiBvcGFjaXR5PSIwLjQiPuKYhTwvdGV4dD4KICA8dGV4dCB4PSI4ODAiIHk9Ijg1MCIgZm9udC1zaXplPSI1NSIgZmlsbD0iI0ZGRDcwMCIgb3BhY2l0eT0iMC41Ij7imIU8L3RleHQ+CiAgPHRleHQgeD0iNTAwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNGRkQ3MDAiIG9wYWNpdHk9IjAuNCI+4piFPC90ZXh0PgoKICA8IS0tIFRyb3BoeSBib2R5IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDI4MCBMIDMyMCA1ODAgUSAzMjAgNjgwIDUxMiA3MDAgUSA3MDQgNjgwIDcwNCA1ODAgTCA3MDQgMjgwIFoiIAogICAgICAgIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgCiAgPCEtLSBUcm9waHkgaGFuZGxlcyBsZWZ0IC0tPgogIDxwYXRoIGQ9Ik0gMzIwIDMyMCBRIDIwMCAzMjAgMjAwIDQ0MCBRIDIwMCA1NDAgMzIwIDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAKICA8IS0tIFRyb3BoeSBoYW5kbGVzIHJpZ2h0IC0tPgogIDxwYXRoIGQ9Ik0gNzA0IDMyMCBRIDgyNCAzMjAgODI0IDQ0MCBRIDgyNCA1NDAgNzA0IDUyMCIgCiAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGQpIiBzdHJva2Utd2lkdGg9IjUwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCiAgPCEtLSBTaGluZSBvbiB0cm9waHkgLS0+CiAgPHBhdGggZD0iTSAzMjAgMjgwIEwgMzIwIDU4MCBRIDMyMCA2ODAgNTEyIDcwMCBRIDcwNCA2ODAgNzA0IDU4MCBMIDcwNCAyODAgWiIgCiAgICAgICAgZmlsbD0idXJsKCNzaGluZSkiLz4KCiAgPCEtLSBUcm9waHkgc3RlbSAtLT4KICA8cmVjdCB4PSI0NjIiIHk9IjcwMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMjAiIGZpbGw9InVybCgjZ29sZCkiIHN0cm9rZT0iI0I4ODYwQiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgCiAgPCEtLSBUcm9waHkgYmFzZSAtLT4KICA8cmVjdCB4PSIzNDAiIHk9IjgyMCIgd2lkdGg9IjM0NCIgaGVpZ2h0PSI2MCIgcng9IjIwIiBmaWxsPSJ1cmwoI2dvbGQpIiBzdHJva2U9IiNCODg2MEIiIHN0cm9rZS13aWR0aD0iNCIvPgogIDxyZWN0IHg9IjM2MCIgeT0iODQwIiB3aWR0aD0iMzA0IiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiNGRkU1NjYiIG9wYWNpdHk9IjAuNSIvPgoKICA8IS0tIFN0YXIgaW4gdHJvcGh5IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iNTYwIiBmb250LXNpemU9IjE4MCIgZmlsbD0iI0ZGRjhEQyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC45Ij7imIU8L3RleHQ+CiAgCiAgPCEtLSDOlM6ZzpHOmc6hzpXOmSB0ZXh0IC0tPgogIDx0ZXh0IHg9IjUxMiIgeT0iOTYwIiBmb250LXNpemU9IjcyIiBmaWxsPSIjRkYwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iOTAwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiPs6UzpnOkc6ZzqHOlc6ZPC90ZXh0PgogIAogIDwhLS0gRGVjb3JhdGl2ZSBsaW5lcyAtLT4KICA8bGluZSB4MT0iMjAwIiB5MT0iMjUwIiB4Mj0iODI0IiB5Mj0iMjUwIiBzdHJva2U9IiNGRkQ3MDAiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==", "sizes": "512x512", "type": "image/svg+xml"}]};
+var blob = new Blob([JSON.stringify(manifestData)], {type: 'application/manifest+json'});
+var url = URL.createObjectURL(blob);
+document.getElementById('pwa-manifest').setAttribute('href', url);
+</script>
+</body>
+</html>
